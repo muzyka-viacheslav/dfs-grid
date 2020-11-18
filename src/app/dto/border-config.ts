@@ -1,4 +1,4 @@
-import {Cell} from '../models/cell';
+import {Cell} from '../models/cell/cell';
 
 export interface IBorderConfig {
   cell: Cell;

@@ -1,6 +1,6 @@
-import {IBorderViewConfig} from '../dto/border-view-config';
-import {IBorderConfig} from '../dto/border-config';
-import {INode} from '../interfaces/INode';
+import {IBorderViewConfig} from '../../dto/border-view-config';
+import {IBorderConfig} from '../../dto/border-config';
+import {INode} from '../../interfaces/INode';
 
 export class Cell implements INode {
 

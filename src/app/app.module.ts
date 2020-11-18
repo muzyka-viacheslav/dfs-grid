@@ -1,6 +1,6 @@
 import {BrowserModule} from '@angular/platform-browser';
-import {CellsService} from './services/cells.service';
-import {DfsService} from './services/dfs.service';
+import {CellsService} from './services/cells/cells.service';
+import {DfsService} from './services/dfs/dfs.service';
 import {AppComponent} from './app.component';
 import {NgModule} from '@angular/core';
 

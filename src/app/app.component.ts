@@ -1,9 +1,9 @@
+import {CellsService} from './services/cells/cells.service';
 import {Component, OnDestroy, OnInit} from '@angular/core';
-import {CellsService} from './services/cells.service';
-import {DfsService} from './services/dfs.service';
+import {DfsService} from './services/dfs/dfs.service';
 import {takeUntil} from 'rxjs/operators';
+import {Cell} from './models/cell/cell';
 import {Subject, timer} from 'rxjs';
-import {Cell} from './models/cell';
 
 @Component({
   selector: 'app-root',

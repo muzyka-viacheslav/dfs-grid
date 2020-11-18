@@ -1,5 +1,5 @@
 import {Injectable} from '@angular/core';
-import {Cell} from '../models/cell';
+import {Cell} from '../../models/cell/cell';
 
 @Injectable()
 export class CellsService {

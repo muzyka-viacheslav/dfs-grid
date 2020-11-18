@@ -1,7 +1,7 @@
-import {INode} from '../interfaces/INode';
+import {INode} from '../../interfaces/INode';
 import {Injectable} from '@angular/core';
 import {Observable, Subject} from 'rxjs';
-import {Stack} from '../models/stack';
+import {Stack} from '../../models/stack/stack';
 
 const timer = ms => new Promise(res => setTimeout(res, ms));
 
