@@ -8,8 +8,8 @@ $cell-border-width: 5px;
 $cell-padding: 1rem;
 $cell-full-size: calc(100% - (2 * #{$cell-padding}));
 
-$cell-animation-duration: .2s;
 $cell-animation-type: ease-in-out;
+$cell-animation-duration: .2s;
 
 :host {
   height: calc(100% - (2 * #{$page-padding}));

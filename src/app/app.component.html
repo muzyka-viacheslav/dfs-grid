@@ -16,27 +16,27 @@
          (click)="start(cell)">
       <div class="bottom">
         <div *ngFor="let border of cell.bottomBorders"
-             [class.show]="border.isExist"
              [class.partitionUsed]="border.partition"
-             [style.flex-basis]="border.partition"></div>
+             [style.flex-basis]="border.partition"
+             [class.show]="border.isExist"></div>
       </div>
       <div class="right">
         <div *ngFor="let border of cell.rightBorders"
-             [class.show]="border.isExist"
              [class.partitionUsed]="border.partition"
-             [style.flex-basis]="border.partition"></div>
+             [style.flex-basis]="border.partition"
+             [class.show]="border.isExist"></div>
       </div>
       <div class="left">
         <div *ngFor="let border of cell.leftBorders"
-             [class.show]="border.isExist"
              [class.partitionUsed]="border.partition"
-             [style.flex-basis]="border.partition"></div>
+             [style.flex-basis]="border.partition"
+             [class.show]="border.isExist"></div>
       </div>
       <div class="top">
         <div *ngFor="let border of cell.topBorders"
-             [class.show]="border.isExist"
              [class.partitionUsed]="border.partition"
-             [style.flex-basis]="border.partition"></div>
+             [style.flex-basis]="border.partition"
+             [class.show]="border.isExist"></div>
       </div>
       <span>{{i}}</span>
     </div>
