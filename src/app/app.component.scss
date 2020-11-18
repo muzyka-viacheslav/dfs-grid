@@ -1,0 +1,130 @@
+$page-padding: 1rem;
+
+$cell-background-color-visited: #c4c4c4;
+$cell-background-color: whitesmoke;
+
+$cell-border-color: #2196F3;
+$cell-border-width: 5px;
+$cell-padding: 1rem;
+$cell-full-size: calc(100% - (2 * #{$cell-padding}));
+
+$cell-animation-duration: .2s;
+$cell-animation-type: ease-in-out;
+
+:host {
+  height: calc(100% - (2 * #{$page-padding}));
+  padding: $page-padding;
+  display: block;
+
+  .header {
+
+  }
+
+  .body {
+    margin-top: 15px;
+
+    .cells {
+      background-color: $cell-border-color;
+      padding: 2 * $cell-border-width;
+      justify-items: center;
+      align-items: center;
+      display: grid;
+      grid-gap: 0;
+
+      > div {
+        transition: background-color $cell-animation-duration $cell-animation-type;
+        background-color: $cell-background-color;
+        justify-content: center;
+        height: $cell-full-size;
+        width: $cell-full-size;
+        padding: $cell-padding;
+        align-items: center;
+        position: relative;
+        text-align: center;
+        cursor: pointer;
+        display: flex;
+
+        > div {
+          justify-content: center;
+          align-items: center;
+          position: absolute;
+          display: flex;
+
+          > div {
+            transition: opacity $cell-animation-duration $cell-animation-type;
+            background-color: $cell-border-color;
+            visibility: hidden;
+            opacity: 0;
+            flex: 1;
+
+            &.partitionUsed {
+              flex-grow: inherit;
+            }
+
+            &.show {
+              visibility: visible;
+              opacity: 1;
+            }
+          }
+
+          &.bottom {
+            height: $cell-border-width;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+
+            > div {
+              height: 100%;
+            }
+          }
+
+          &.right {
+            width: $cell-border-width;
+            flex-direction: column;
+            height: 100%;
+            right: 0;
+            top: 0;
+
+            > div {
+              width: 100%;
+            }
+          }
+
+          &.left {
+            width: $cell-border-width;
+            flex-direction: column;
+            height: 100%;
+            left: 0;
+            top: 0;
+
+            > div {
+              width: 100%;
+            }
+          }
+
+          &.top {
+            height: $cell-border-width;
+            width: 100%;
+            left: 0;
+            top: 0;
+
+            > div {
+              height: 100%;
+            }
+          }
+        }
+
+        > span {
+          font-weight: bold;
+        }
+
+        &.visited,
+        &:hover {
+          background-color: $cell-background-color-visited;
+        }
+      }
+    }
+
+  }
+
+}
