@@ -2,7 +2,23 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.6.
 
-## 
+## Prerequisites
+
+- Node.JS version not less than `12.x`
+- NPM version not less than `6.x`
+- Angular CLI latest (to install it run `npm i -g angular/cli`)
+ 
+
+## Install dependencies 
+
+Run the following commands in the root of the project.
+- `npm i`
+
+## Local Launch
+
+In order to launch the application without actual build or serve it just host the `dist-build` folder on any port of your machine (through the IIS or npm packages like `http-server`).
+
+P.S. Content of `dist-build` folder is just a copy of a project production build artifact.
 
 ## Development server
 
